@@ -1,10 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Interfaces;
 
-import Pojo.StudentEnrolment;
+import Class.StudentEnrolment;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,7 +40,8 @@ public class StudentEnrolmentManager {
 //        }
 //        return false;
 //    }
-    
+
+    //delete course of 1 student
     public boolean delete(String studentID,String courseID,String semester){
          for (int i = 0; i < listStudentEnrolment.size(); i++) {
            if(listStudentEnrolment.get(i).getIdStudent().equals(studentID)
