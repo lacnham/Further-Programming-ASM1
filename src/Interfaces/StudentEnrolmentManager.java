@@ -31,18 +31,18 @@ public class StudentEnrolmentManager {
         listStudentEnrolment.add(studentEnrolment);
         return true;
     }
-
-    public boolean update(String studentID,String courseID,String semester){
-
-          for (int i = 0; i < listStudentEnrolment.size(); i++) {
-           if(listStudentEnrolment.get(i).getIdStudent().equals(studentID)
-                   && listStudentEnrolment.get(i).getSemester().equals(semester)){
-               listStudentEnrolment.set(i, new StudentEnrolment(studentID,courseID,semester));
-               return true;
-           }
-        }
-        return false;
-    }
+    //use ADD instead of UPDATE
+//    public boolean update(String studentID,String courseID,String semester){
+//
+//          for (int i = 0; i < listStudentEnrolment.size(); i++) {
+//           if(listStudentEnrolment.get(i).getIdStudent().equals(studentID)
+//                   && listStudentEnrolment.get(i).getSemester().equals(semester)){
+//               listStudentEnrolment.set(i, new StudentEnrolment(studentID,courseID,semester));
+//               return true;
+//           }
+//        }
+//        return false;
+//    }
     
     public boolean delete(String studentID,String courseID,String semester){
          for (int i = 0; i < listStudentEnrolment.size(); i++) {
