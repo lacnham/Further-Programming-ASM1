@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package Main;
 
 import Interfaces.StudentEnrolmentManager;
@@ -49,7 +46,7 @@ public class Main {
                         "\n1. Enrolment" +
                         "\n2. List Course Of Student and Update Course" +
                         "\n3. List Course Of Student in a Semester" +
-                        "\n-1. Exit the program");
+                        "\n4. Exit the program");
                 System.out.print("Choose an option: ");
                 int a = sc.nextInt();
                 sc.nextLine();
@@ -88,7 +85,8 @@ public class Main {
                         boolean flag1 = true;
                         do{
                             System.out.println("1. DELETE COURSE" +
-                                    "\n2. ADD COURSE" );
+                                    "\n2. ADD COURSE" +
+                                    " \n3. EXIT");
                             System.out.print("Choose an option:");
                             int b = sc.nextInt();
                             sc.nextLine();
@@ -134,7 +132,7 @@ public class Main {
                         List<StudentEnrolment> listStudentEnrolments = studentEnrolmentManager.getOne(idstudent,semesters);
                         /*  private static final String COMMA_DELIMITER = ",";
                         private static final String NEW_LINE_SEPARATOR = "\n";
-                        
+
                         // CSV file header
                         private static final String FILE_HEADER = "id,code,name";*/
                         FileWriter fileWriter = null;
