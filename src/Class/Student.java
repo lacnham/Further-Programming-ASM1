@@ -3,10 +3,6 @@ package Class;
 
 import java.util.Date;
 
-/**
- *
- * @author PC
- */
 public class Student {
     private String id;
     private String name;
